@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lebron.rafa_.facilrunaslol.my.lebron.rafa_.facilrunaslol.PantallaCampeon">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@color/colorPrimary"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/fondotoolbar"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_pantalla_campeon" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnInsertarCampeon"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@android:color/black"
+        app:srcCompat="@android:drawable/ic_input_add"
+        tools:layout_editor_absoluteX="306dp"
+        tools:layout_editor_absoluteY="493dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnVerRunas"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@android:color/black"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="left|bottom"
+        app:srcCompat="@android:drawable/ic_menu_view"
+        tools:layout_editor_absoluteX="306dp"
+        tools:layout_editor_absoluteY="510dp" />
+
+</android.support.design.widget.CoordinatorLayout>
